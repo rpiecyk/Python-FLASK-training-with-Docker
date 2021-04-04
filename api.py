@@ -22,4 +22,4 @@ class CheckHealth(Resource):
         # to be done part
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
