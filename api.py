@@ -10,10 +10,8 @@ class PingPong(Resource):
     def post(self):
         post_req = request.get_json()
         get_req = post_req['url']
-        r = requests.get(url = get_req).content
-        return jsonify(r)
-        #r = requests.get(url = get_req )
-        #return r.text
+        r = requests.get(url = get_req)
+        return r.text
 
 @api.route('/health', methods=['GET'])
 class CheckHealth(Resource):
