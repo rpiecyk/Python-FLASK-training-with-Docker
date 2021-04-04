@@ -23,7 +23,7 @@ When the environment is up and running, send a request to *ping-service*:
 `curl -X POST http://localhost:8080/api/v1/ping -H "Content-Type: application/json" -d '{"url":"http://receiver-service:8080/api/v1/info"}'`
 
 Request above posts a request data to *ping-service* which then sends it to *receiver-service* as GET request.
-If working correctly, it returns a json response "*** { "Receiver": "Hello api.py!"} ***"
+If working correctly, it returns a json response ***{ "Receiver": "Hello api.py!"}***
 
 #### Future
 
