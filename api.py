@@ -11,7 +11,7 @@ class PingPong(Resource):
         post_req = request.get_json()
         get_req = post_req['url']
         r = requests.get(url = get_req)
-        return r.text
+        return r.json()
 
 @api.route('/health', methods=['GET'])
 class CheckHealth(Resource):
@@ -20,4 +20,4 @@ class CheckHealth(Resource):
         # to be done part
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0')
