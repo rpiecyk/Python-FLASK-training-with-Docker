@@ -7,9 +7,9 @@ There are two services run by docker-compose:
 
   After receiving GET request on /health route it should return "healthy" string indicating that the running appication is reachable. 
 
-Currently it is a plain text message and it will be optimised for real case usage in the future.
+  Currently it is a plain text message and it will be optimised for real case usage in the future.
   
-This service is exposed on host port 8080.
+  This service is exposed on host port 8080.
 - receiver-service - after receiving GET request on api/v1/info route it should return string "Receiver: Hello api.py!". It has been created for testing purpose.
 
 #### Usage
