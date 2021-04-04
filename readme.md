@@ -1,6 +1,6 @@
 ## Two Python REST services run on docker-compose
 
-#### Describtion
+#### Description
 
 There are two services run by docker-compose:
 - ping-service - after receiving POST request on api/v1/ping route with the receiver-servie url it should try to reach the url via HTTP and return it's payload. 
