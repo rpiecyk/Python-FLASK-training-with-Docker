@@ -4,7 +4,8 @@ services:
   pingservice:
     build: 
       context: .
-      dockerfile: dockerfile_app1 
+      dockerfile: build/dockerfile_ping
+    image: ping-service:latest
     container_name: ping-service
     ports:
       - "8080:5000"
@@ -13,7 +14,8 @@ services:
   receiverservice:
     build: 
       context: .
-      dockerfile: dockerfile_app2
+      dockerfile: build/dockerfile_receiver
+    image: receiver-service:latest
     container_name: receiver-service
     networks:
       - Python-Flask-Network
