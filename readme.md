@@ -27,4 +27,6 @@ If working correctly, it returns a json object ***{ "Receiver": "Hello api.py!"}
 
 #### Future
 
-TBD
+- add swagger 
+- add pytest for curl output verification
+- switch curl health-check for python service
